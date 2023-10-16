@@ -25,6 +25,7 @@ resource "aws_instance" "acme" {
 
   tags = {
     Name = "ACME Corp Presentation"
+  }
 }
 
 module "acme_sg" {
@@ -38,5 +39,4 @@ module "acme_sg" {
   egress_rules = ["all-all"]
   egress_cidr_blocks = ["0.0.0.0/0"]
 }
-
 
