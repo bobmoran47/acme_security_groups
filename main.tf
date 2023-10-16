@@ -24,7 +24,7 @@ resource "aws_instance" "acme" {
   vpc_security_group_ids = [module.acme_sg.security_group_id]
 
   tags = {
-    Name = "ACME Corp Presentation:
+    Name = "ACME Corp Presentation"
 }
 
 module "acme_sg" {
